@@ -1,8 +1,8 @@
-# Intelligent Plant Disease Diagnosis from Leaf Images
+# Plant Disease Detection and Treatment Tracking Using AI and Fuzzy Logic
 
 Graduation project in Artificial Intelligence developed as part of a student team at the Faculty of Informatics Engineering, Damascus University.
 
-**Project contributor:** Ehmed Silêman  
+**Project Contributor:** Ehmed Silêman  
 **Specialization:** Artificial Intelligence
 
 ## Project Overview
@@ -10,12 +10,13 @@ Graduation project in Artificial Intelligence developed as part of a student tea
 This project presents an intelligent system for diagnosing plant diseases
 by analyzing images of plant leaves.
 
-The system is designed to help farmers and agricultural specialists identify
-plant diseases more quickly and provide useful treatment and prevention information.
+The system is designed to help users identify plant diseases, provide
+treatment recommendations and preventive guidance, and support treatment
+follow-up using Fuzzy Logic.
 
 ## How the System Works
 
-The system follows a multi-stage diagnosis approach:
+The system follows a multi-stage diagnosis process:
 
 1. The user provides:
    - A plant leaf image
@@ -26,68 +27,93 @@ The system follows a multi-stage diagnosis approach:
    plant selected by the user.
 
 3. If the plant type is confirmed, a second classifier analyzes the image
-   using the disease classes associated with that specific plant type.
+   using disease classes associated with that specific plant type.
 
-4. The system then provides:
+4. The system provides:
    - The probable disease
    - Suggested treatment
    - Recommended active substances
    - Preventive guidance
 
-## Geographic Disease Analysis
+5. Fuzzy Logic is used as part of the treatment follow-up and
+   decision-support process.
 
-The application can use the user's geographic location to display diseases
-that are commonly reported in the surrounding area.
+## Artificial Intelligence
 
-This can help users take preventive measures before disease symptoms become severe.
+The project uses Artificial Intelligence and Computer Vision techniques
+to analyze plant leaf images and identify diseases.
 
-## Artificial Intelligence & Computer Vision
-
-The project explores Artificial Intelligence and Computer Vision techniques
-for plant disease diagnosis from leaf images.
-
-The technical design includes concepts such as:
+The system architecture includes concepts such as:
 
 - Convolutional Neural Networks (CNN)
 - Transfer Learning
 - Image Classification
+- Feature Extraction
 - Object Detection
 - Semantic Segmentation
-- Feature Extraction
 - Softmax Classification
 
-Potential lightweight deep-learning architectures discussed in the project
-include MobileNet and EfficientNet for mobile-oriented deployment.
+## Dual-Stage Classification
 
-## Proposed Technologies
+One of the main concepts of the project is a two-stage classification approach.
 
-- Python
-- OpenCV
-- Flutter
-- Django API
-- Node.js
-- NoSQL databases
-- Machine Learning
-- Deep Learning
-- Computer Vision
+The first classifier verifies the plant type.
+
+The second classifier performs disease classification using only the disease
+classes associated with the verified plant type.
+
+This approach helps reduce classification ambiguity and improve diagnosis accuracy.
+
+## Fuzzy Logic
+
+Fuzzy Logic is integrated into the treatment follow-up process.
+
+Instead of relying only on fixed binary rules, the fuzzy system can evaluate
+multiple treatment-related conditions and support treatment decisions based
+on fuzzy rules.
+
+## Geographic Disease Analysis
+
+The application can use the user's geographic location to identify diseases
+that are commonly reported in the surrounding area.
+
+This feature can help users take preventive measures based on local disease patterns.
 
 ## Main Features
 
 - Plant leaf image analysis
 - Plant type verification
-- Disease classification
+- AI-based disease classification
+- Dual-stage classification
 - Treatment recommendations
+- Treatment tracking using Fuzzy Logic
 - Preventive guidance
-- Geographic disease information
-- Mobile-oriented user interface
+- Geographic disease analysis
+- Disease and treatment information
 
-## Academic Field
+## Technologies and Technical Areas
 
 - Artificial Intelligence
 - Machine Learning
 - Deep Learning
 - Computer Vision
+- CNN
+- Fuzzy Logic
 - Image Classification
+- OpenCV
+- Python
+- Flutter
+- Django API
+- Node.js
+- NoSQL Databases
+- GPS / Geographic Information
+
+## Academic Field
+
+- Artificial Intelligence
+- Machine Learning
+- Computer Vision
+- Fuzzy Logic
 - Software Engineering
 
 ## Project Contribution
